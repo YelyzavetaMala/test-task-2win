@@ -1,0 +1,17 @@
+@media screen and (min-width: 1440px) {
+  .view-controls {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .view-controls button {
+    padding: 8px 16px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .view-controls button.active {
+    background: #333;
+    color: #fff;
+  }
+}

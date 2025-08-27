@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2WIN</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-container">
+        <button
+          id="openModalBtn"
+          class="menu-button"
+          title="open menu"
+          type="button"
+        >
+          <svg class="header-menu" width="24" height="20">
+            <use href="img/icons.svg#icon-menu"></use>
+          </svg>
+        </button>
+        <button>+ Create</button>
+        <h1 class="logo">2WIN</h1>
+        <picture>
+          <source
+            srcset="./img/avatar-img-1x.png 1x, ./img/avatar-img-2x.png 2x"
+            type="image/png"
+          />
+          <img
+            loading="lazy"
+            width="32"
+            height="32"
+            class="photo"
+            src="./img/avatar-img-1x.png"
+            alt="Avatar"
+          />
+        </picture>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div class="container">
+          <div>
+            <h2 class="section-title"></h2>
+            <button class="sorted-btn">+ Sorted by</button>
+          </div>
+          <div class="view-controls">
+            <button id="gridView" class="active">Картки</button>
+            <button id="listView">Список</button>
+          </div>
+          <div class="gallery grid-view">
+            <div class="card">
+              <div class="quiz-name">
+                <img src="" alt="Card 1" />
+                <h3 class="card-title">
+                  Quiz name. Ready to turn your ambitions into achievements –
+                  Moderation 2
+                </h3>
+              </div>
+              <div class="results-rating"></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div class="card">
+              <img src="" alt="Card 2" />
+              <h3 class="card-title">
+                Quiz name. Ready to turn your ambitions into achievements –
+                Moderation 2
+              </h3>
+            </div>
+            <div class="card">
+              <img src="" alt="Card 3" />
+              <h3 class="card-title">
+                Quiz name. Ready to turn your ambitions into achievements –
+                Moderation 2
+              </h3>
+            </div>
+            <div class="card">
+              <img src="" alt="Card 4" />
+              <h3 class="card-title">
+                Quiz name. Ready to turn your ambitions into achievements –
+                Moderation 2
+              </h3>
+            </div>
+            <div class="card">
+              <img src="" alt="Card 5" />
+              <h3 class="card-title">
+                Quiz name. Ready to turn your ambitions into achievements –
+                Moderation 2
+              </h3>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

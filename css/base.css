@@ -1,0 +1,93 @@
+:root {
+  --primary: #d13980;
+  --secondary: #ffffff;
+  --success: #3bad4b;
+  --info: #66c0da;
+  --white-color: #ffffff;
+  --body-bg: #1e1e3e;
+  --text-color: #2e2e54;
+  --btn-text: #ffffff;
+
+  /* Breakpoints */
+  --mobile: 375px;
+  --mobile-max: 1439.98px;
+  --desktop: 1440px;
+
+  /* Transition properties */
+  --transition-time: 250ms;
+  --transition-effect: cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Backdrop */
+  --background-color: rgba(0, 0, 0, 0.6);
+
+  /* Backdrop */
+  --primary-font-family: "Montserrat", sans-serif;
+
+  /* Height-constants */
+  --header-height-small: 80px;
+  --header-height-medium: 90px;
+}
+
+.sort-panel {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.sort-panel button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sort-panel button:hover {
+  background: #ddd;
+}
+
+.gallery {
+  display: grid;
+  gap: 20px;
+}
+
+.gallery.grid-view {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery.grid-view .card {
+  border: 1px solid #ccc;
+  padding: 15px;
+
+  transition: all 0.3s;
+}
+
+.gallery.grid-view .card img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery.list-view {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.gallery.list-view .card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.gallery.list-view .card img {
+  width: 100px;
+  height: auto;
+}
+
+.view-controls {
+  display: none;
+}
