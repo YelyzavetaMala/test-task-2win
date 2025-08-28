@@ -8,40 +8,41 @@
   </head>
   <body>
     <header>
-      <div class="header-container">
-        <button
-          id="openModalBtn"
-          class="menu-button"
-          title="open menu"
-          type="button"
-        >
-          <svg class="header-menu" width="24" height="20">
-            <use href="img/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <button>+ Create</button>
-        <h1 class="logo">2WIN</h1>
-        <picture>
-          <source
-            srcset="./img/avatar-img-1x.png 1x, ./img/avatar-img-2x.png 2x"
-            type="image/png"
-          />
-          <img
-            loading="lazy"
-            width="32"
-            height="32"
-            class="photo"
-            src="./img/avatar-img-1x.png"
-            alt="Avatar"
-          />
-        </picture>
+      <div class="">
+        <div class="header-nav">
+          <button
+            class="menu-button open-modal"
+            data-modal="modal-menu"
+            title="open menu"
+            type="button"
+          >
+            <svg class="header-menu" width="32" height="32">
+              <use href="./img/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+          <button class="create-btn">+ Create</button>
+          <h1 class="logo">2WIN</h1>
+          <picture class="avatar">
+            <source
+              srcset="./img/avatar-img-1x.png 1x, ./img/avatar-img-2x.png 2x"
+              type="image/png"
+            />
+            <img
+              loading="lazy"
+              width="32"
+              height="32"
+              src="./img/avatar-img-1x.png"
+              alt="Avatar"
+            />
+          </picture>
+        </div>
       </div>
     </header>
     <main>
       <section>
-        <div class="container">
-          <div>
-            <h2 class="section-title"></h2>
+        <div class="">
+          <div class="section-sorted">
+            <h2 class="section-title">Unmoderated quizzes</h2>
             <button class="sorted-btn">+ Sorted by</button>
           </div>
           <div class="view-controls">
@@ -51,15 +52,84 @@
           <div class="gallery grid-view">
             <div class="card">
               <div class="quiz-name">
-                <img src="" alt="Card 1" />
+                <img src="./img/card-img.png" alt="Card 2" />
                 <h3 class="card-title">
                   Quiz name. Ready to turn your ambitions into achievements –
                   Moderation 2
                 </h3>
               </div>
-              <div class="results-rating"></div>
-              <div></div>
-              <div></div>
+
+              <div>
+                <svg width="32" height="32">
+                  <use href="./img/icons.svg#icon-data"></use>
+                </svg>
+                <p>31.01.2025</p>
+
+                <div class="results-rating">
+                  <svg width="32" height="32">
+                    <use href="./img/icons.svg#icon-results"></use>
+                  </svg>
+                  <p>0</p>
+                  <ul class="reviews-stars">
+                    <li>
+                      <svg class="reviews-star" width="24" height="24">
+                        <use href="img/icons.svg#icon-Star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="reviews-star" width="24" height="24">
+                        <use href="img/icons.svg#icon-Star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="reviews-star" width="24" height="24">
+                        <use href="img/icons.svg#icon-Star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="reviews-star" width="24" height="24">
+                        <use href="img/icons.svg#icon-Star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="reviews-star" width="24" height="24">
+                        <use href="img/icons.svg#icon-Star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p>History / Europe History / Ukraine</p>
+              <div>
+                <div>
+                  <p class="moderate">Moderate on 33%</p>
+                  <p><span>Started</span> 31.01.2025</p>
+                </div>
+                <div>
+                  <img
+                    class="avatar"
+                    src="./img/moderator-name.png"
+                    alt="Moderator Name"
+                  />
+                  <div>
+                    <p>Moderator Name</p>
+                    <p>Beginner Moderator</p>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button>
+                  <svg class="header-menu" width="32" height="32">
+                    <use href="./img/icons.svg#icon-menu"></use>
+                  </svg>
+                </button>
+                <button>
+                  <svg class="header-menu" width="32" height="32">
+                    <use href="./img/icons.svg#icon-menu"></use>
+                  </svg>
+                </button>
+                <button>Start moderation</button>
+              </div>
             </div>
             <div class="card">
               <img src="" alt="Card 2" />
