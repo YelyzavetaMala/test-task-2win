@@ -11,27 +11,46 @@
     <header>
       <div class="">
         <div class="header-nav">
-          <button
-            class="menu-button open-modal"
-            data-modal="modal-menu"
-            title="open menu"
-            type="button"
-          >
-            <svg class="header-menu" width="32" height="32">
-              <use href="./img/icons.svg#icon-menu"></use>
-            </svg>
-          </button>
-          <button class="create-btn">+ Create</button>
+          <div>
+            <button
+              class="menu-button open-modal"
+              data-modal="modal-menu"
+              title="open menu"
+              type="button"
+            >
+              <svg class="header-menu" width="20" height="14">
+                <use href="./img/icons.svg#icon-menu"></use>
+              </svg>
+            </button>
+            <button class="create-btn">
+              <svg class="icon-plus" width="12" height="12">
+                <use href="./img/icons.svg#icon-plus"></use>
+              </svg>
+              Create
+            </button>
+          </div>
           <h1 class="logo">2WIN</h1>
+          <ul class="menu-nav-header">
+            <li class="menu-item-header">
+              <a class="menu-link-header" href="#home">Home</a>
+            </li>
+            <li class="menu-item-header">
+              <a class="menu-link-header" href="#materials"
+                >Materials for Quiz</a
+              >
+            </li>
+            <li class="menu-item-header">
+              <a class="menu-link-header" href="#feedback">Feedback</a>
+            </li>
+          </ul>
           <picture class="avatar">
             <source
               srcset="./img/avatar-img-1x.png 1x, ./img/avatar-img-2x.png 2x"
               type="image/png"
             />
             <img
+              class="avatar"
               loading="lazy"
-              width="32"
-              height="32"
               src="./img/avatar-img-1x.png"
               alt="Avatar"
             />
@@ -44,13 +63,238 @@
         <div class="">
           <div class="section-sorted">
             <h2 class="section-title">Unmoderated quizzes</h2>
-            <button class="sorted-btn">+ Sorted by</button>
+            <button class="sorted-btn">
+              <svg class="icon-plus" width="12" height="12">
+                <use href="./img/icons.svg#icon-plus"></use>
+              </svg>
+              Sorted by
+            </button>
           </div>
           <div class="view-controls">
             <button id="gridView" class="active">Картки</button>
             <button id="listView">Список</button>
           </div>
           <div class="gallery grid-view">
+            <div class="card">
+              <div class="quiz-name">
+                <img src="./img/card-img.png" alt="Card 2" />
+                <h3 class="card-title">
+                  Quiz name. Ready to turn your ambitions into achievements –
+                  Moderation 2
+                </h3>
+              </div>
+
+              <div class="created-info">
+                <div class="created-data">
+                  <svg class="created-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-data"></use>
+                  </svg>
+                  <p>31.01.2025</p>
+                </div>
+                <div class="results-rating">
+                  <div class="results">
+                    <svg class="results-icon" width="16" height="16">
+                      <use href="./img/icons.svg#icon-results"></use>
+                    </svg>
+                    <p>0</p>
+                  </div>
+                  <ul class="card-stars">
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <p>History / Europe History / Ukraine</p>
+              <div class="info-moderator">
+                <div>
+                  <p class="moderate">Moderate on 33%</p>
+                  <p class="started-data">Started <span> 31.01.2025</span></p>
+                </div>
+                <div class="moderator">
+                  <img src="./img/moderator-name.png" alt="Moderator Name" />
+                  <div>
+                    <p class="moderator-name">Moderator Name</p>
+                    <p class="moderator-position">Beginner Moderator</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card-btns">
+                <button class="card-btn">
+                  <svg class="" width="16" height="16">
+                    <use href="./img/icons.svg#icon-link"></use>
+                  </svg>
+                </button>
+                <button class="card-btn">
+                  <svg class="" width="16" height="16">
+                    <use href="./img/icons.svg#icon-comment"></use>
+                  </svg>
+                </button>
+                <button class="start-btn">Start moderation</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="quiz-name">
+                <img src="./img/card2-img.png" alt="Card 2" />
+                <h3 class="card-title">
+                  Quiz name. o make a type specimen book
+                </h3>
+              </div>
+
+              <div class="created-info">
+                <div class="created-data">
+                  <svg class="created-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-data"></use>
+                  </svg>
+                  <p>31.01.2025</p>
+                </div>
+                <div class="results-rating">
+                  <div class="results">
+                    <svg class="results-icon" width="16" height="16">
+                      <use href="./img/icons.svg#icon-results"></use>
+                    </svg>
+                    <p>0</p>
+                  </div>
+                  <ul class="card-stars">
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info-moderator">
+                <div>
+                  <p class="not-moderate">Not moderated</p>
+                </div>
+              </div>
+              <div class="card-btns">
+                <button class="card-btn">
+                  <svg class="" width="16" height="16">
+                    <use href="./img/icons.svg#icon-link"></use>
+                  </svg>
+                </button>
+                <button class="card-btn">
+                  <svg class="" width="16" height="16">
+                    <use href="./img/icons.svg#icon-comment"></use>
+                  </svg>
+                </button>
+                <button class="start-btn">Start moderation</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="quiz-name">
+                <img src="./img/card2-img.png" alt="Card 2" />
+                <h3 class="card-title">
+                  Quiz name. o make a type specimen book
+                </h3>
+              </div>
+
+              <div class="created-info">
+                <div class="created-data">
+                  <svg class="created-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-data"></use>
+                  </svg>
+                  <p>31.01.2025</p>
+                </div>
+                <div class="results-rating">
+                  <div class="results">
+                    <svg class="results-icon" width="16" height="16">
+                      <use href="./img/icons.svg#icon-results"></use>
+                    </svg>
+                    <p>0</p>
+                  </div>
+                  <ul class="card-stars">
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                    <li>
+                      <svg class="card-star" width="16" height="16">
+                        <use href="img/icons.svg#icon-star"></use>
+                      </svg>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="info-moderator">
+                <div>
+                  <p class="not-moderate">Not moderated</p>
+                </div>
+              </div>
+              <div class="card-btns">
+                <button class="card-btn">
+                  <svg class="" width="16" height="16">
+                    <use href="./img/icons.svg#icon-link"></use>
+                  </svg>
+                </button>
+                <button class="card-btn">
+                  <svg class="" width="16" height="16">
+                    <use href="./img/icons.svg#icon-comment"></use>
+                  </svg>
+                </button>
+                <button class="start-btn">Start moderation</button>
+              </div>
+            </div>
             <div class="card">
               <div class="quiz-name">
                 <img src="./img/card-img.png" alt="Card 2" />
