@@ -215,6 +215,7 @@ header {
 
 .sidebar .menu li:last-child {
   border-top: 1px solid #69748c;
+  padding-top: 26px;
 }
 
 .sidebar .menu li:active,
@@ -231,7 +232,6 @@ header {
   text-align: center;
 }
 .menu-icon {
-  margin-right: 5px;
   fill: #dadada;
 }
 
@@ -305,7 +305,6 @@ header {
 
 .gallery {
   display: grid;
-  gap: 20px;
 }
 
 .gallery.grid-view {
@@ -330,20 +329,27 @@ header {
 .gallery.list-view {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  justify-content: space-between;
+  padding: 0 24px;
 }
 
 .gallery.list-view .card {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 15px;
-  border: 1px solid #ccc;
-  padding: 10px;
+  border: 1px solid #d2d4d8;
+  background-color: var(--secondary);
+  padding: 12px 4px;
 }
 
 .gallery.list-view .card img {
-  width: 100px;
-  height: auto;
+  width: 40px;
+  height: 24px;
+}
+
+.gallery.list-view .card .created-info {
+  gap: 25px;
 }
 
 .view-controls {
