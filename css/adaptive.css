@@ -1,22 +1,80 @@
 @media screen and (min-width: 1440px) {
   .view-controls {
     display: flex;
-    margin-bottom: 20px;
   }
 
   .view-controls button {
     padding: 8px 16px;
     margin-right: 10px;
     cursor: pointer;
+    background-color: transparent;
+    border: none;
   }
-
-  .view-controls button.active {
-    background: #333;
-    color: #fff;
+  .view-controls button svg {
+    fill: #69748c;
+  }
+  .view-controls button svg.active {
+    fill: var(--primary);
   }
   .gallery.grid-view {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
+  }
+
+  .gallery.grid-view .card {
+    background-color: var(--secondary);
+    border-radius: 6px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+  .sorted-section {
+    display: flex;
+    justify-content: space-between;
+  }
+  .sorted-list {
+    display: flex;
+    align-items: start;
+    gap: 24px;
+    margin: 0 24px;
+  }
+  .sorted-list li {
+    color: var(--primary);
+    font-size: 14px;
+  }
+  .icon-arrow {
+    fill: var(--primary);
+    margin-left: 4px;
+  }
+
+  .section-sorted {
+    padding: 24px 0 16px;
+    margin: 0 24px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+  .card-btn {
+    display: flex;
+    padding: 10px;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid #d2d4d8;
+    border-radius: 6px;
+  }
+  .card-btn svg {
+    width: 12px;
+    height: 12px;
+  }
+  .comments-text {
+    display: flex;
+
+    margin-left: 5px;
+  }
+
+  .start-btn {
+    padding: 9px 21px;
   }
 }

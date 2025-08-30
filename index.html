@@ -58,11 +58,39 @@
         </div>
       </div>
     </header>
-    <main>
-      <section>
+     <div class="page">
+    <aside class="sidebar">
+      <nav class="menu">
+        <ul>
+          <li><a href="#"> <svg class="menu-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-my-quizzes"></use>
+                  </svg>My quizzes</a></li>
+          <li><a href="#"><svg class="menu-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-completed"></use>
+                  </svg>Completed quizzes</a></li>
+          <li><a href="#"><svg class="menu-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-unmoderated"></use>
+                  </svg>Unmoderated quizzes</a></li>
+           <li><a href="#"><svg class="menu-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-manage"></use>
+                  </svg>Manage quiz folders</a></li>
+            <li><a href="#"><svg class="menu-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-trash"></use>
+                  </svg>Trash</a></li>
+             <li><a href="#"><svg class="menu-icon" width="16" height="16">
+                    <use href="./img/icons.svg#icon-profile"></use>
+                  </svg>My profile</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+      
+ 
+      <section class="cards-section">
         <div class="">
           <div class="section-sorted">
             <h2 class="section-title">Unmoderated quizzes</h2>
+
             <button class="sorted-btn">
               <svg class="icon-plus" width="12" height="12">
                 <use href="./img/icons.svg#icon-plus"></use>
@@ -70,9 +98,39 @@
               Sorted by
             </button>
           </div>
+          <div class="sorted-section">
+            <ul class="sorted-list">
+              <li>Quiz name <svg class="icon-arrow" width="12" height="12">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg></li>
+              <li>Results and rating <svg class="icon-arrow" width="12" height="12">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg></li>
+              <li>Created <svg class="icon-arrow" width="12" height="12">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg></li>
+              <li>Category <svg class="icon-arrow" width="12" height="12">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg></li>
+              <li>Moderation status <svg class="icon-arrow" width="12" height="12">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg></li>
+              <li>Moderation 
+date <svg class="icon-arrow" width="12" height="12">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg></li>
+              <li>Last moderation by <svg class="icon-arrow" width="12" height="12">
+                <use href="./img/icons.svg#icon-arrow"></use>
+              </svg></li>
+            </ul>
           <div class="view-controls">
-            <button id="gridView" class="active">Картки</button>
-            <button id="listView">Список</button>
+            <button id="gridView" class="active"><svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-grid-view"></use>
+                  </svg></button>
+            <button id="listView"><svg width="20" height="20">
+                    <use href="./img/icons.svg#icon-view_list"></use>
+                  </svg></button>
+          </div>
           </div>
           <div class="gallery grid-view">
             <div class="card">
@@ -150,7 +208,7 @@
                 <button class="card-btn">
                   <svg class="" width="16" height="16">
                     <use href="./img/icons.svg#icon-comment"></use>
-                  </svg>
+                  </svg><p class="comments-text">Comments & rates</p>
                 </button>
                 <button class="start-btn">Start moderation</button>
               </div>
@@ -220,7 +278,7 @@
                 <button class="card-btn">
                   <svg class="" width="16" height="16">
                     <use href="./img/icons.svg#icon-comment"></use>
-                  </svg>
+                  </svg><p class="comments-text">Comments & rates</p>
                 </button>
                 <button class="start-btn">Start moderation</button>
               </div>
@@ -290,7 +348,7 @@
                 <button class="card-btn">
                   <svg class="" width="16" height="16">
                     <use href="./img/icons.svg#icon-comment"></use>
-                  </svg>
+                  </svg><p class="comments-text">Comments & rates</p>
                 </button>
                 <button class="start-btn">Start moderation</button>
               </div>
@@ -370,7 +428,7 @@
                 <button class="card-btn">
                   <svg class="" width="16" height="16">
                     <use href="./img/icons.svg#icon-comment"></use>
-                  </svg>
+                  </svg><p class="comments-text">Comments & rates</p>
                 </button>
                 <button class="start-btn">Start moderation</button>
               </div>
@@ -440,7 +498,7 @@
                 <button class="card-btn">
                   <svg class="" width="16" height="16">
                     <use href="./img/icons.svg#icon-comment"></use>
-                  </svg>
+                  </svg><p class="comments-text">Comments & rates</p>
                 </button>
                 <button class="start-btn">Start moderation</button>
               </div>
@@ -448,6 +506,7 @@
           </div>
         </div>
       </section>
+       </div>
     </main>
     <footer></footer>
     <script type="module" src="main.js"></script>
