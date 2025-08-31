@@ -8,19 +8,15 @@
   --text-color: #2e2e54;
   --btn-text: #ffffff;
 
-  /* Breakpoints */
   --mobile: 360px;
   --mobile-max: 1439.98px;
   --desktop: 1440px;
 
-  /* Transition properties */
   --transition-time: 250ms;
   --transition-effect: cubic-bezier(0.4, 0, 0.2, 1);
 
-  /* Backdrop */
   --background-color: rgba(0, 0, 0, 0.6);
 
-  /* Height-constants */
   --header-height-small: 80px;
   --header-height-medium: 90px;
 }
@@ -67,7 +63,6 @@ body {
   margin: 0 auto;
 }
 
-/* Скидання стилів */
 * {
   margin: 0;
   padding: 0;
@@ -186,7 +181,7 @@ header {
 }
 
 .sidebar .menu li {
-  padding: 8px 16px;
+  padding: 8px 20px;
   margin-bottom: 8px;
   border-left: 4px solid transparent;
 }
@@ -486,9 +481,8 @@ header {
   transition: all 0.3s ease;
 }
 
-/* стилі пагінації */
 .pagination {
-  display: none; /* прихована за замовчуванням */
+  display: none;
 }
 
 .pagination.list-style {

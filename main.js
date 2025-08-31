@@ -5,7 +5,7 @@ const sortedSection = document.querySelector(".sorted-section");
 const pagination = document.querySelector(".pagination");
 const page = document.body;
 
-// функція перемикання вигляду
+// функція перемикання вигляду таблиці карток
 function switchView(mode) {
   if (mode === "grid") {
     gallery.classList.remove("list-view");
