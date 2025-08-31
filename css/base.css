@@ -132,9 +132,6 @@ header {
   align-items: center;
   cursor: pointer;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 1440px) {
-    display: none;
-  }
 }
 
 .create-btn {
@@ -144,10 +141,6 @@ header {
   padding: 9px 12px;
   border: none;
   border-radius: 6px;
-  @media screen and (min-width: 1440px) {
-    font-size: 18px;
-    padding: 13px 20px;
-  }
 }
 
 .sorted-btn .icon-plus {
@@ -165,30 +158,15 @@ header {
   font-weight: 700;
   height: 34px;
   margin: 0;
-  @media screen and (min-width: 1440px) {
-    font-size: 40px;
-    height: 46px;
-  }
 }
 
 .menu-nav-header {
   display: none;
-  @media screen and (min-width: 1440px) {
-    display: flex;
-    gap: 160px;
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--primary);
-  }
 }
 
 .avatar {
   width: 32px;
   height: 32px;
-  @media screen and (min-width: 1440px) {
-    width: 48px;
-    height: 48px;
-  }
 }
 
 .page {
@@ -239,15 +217,6 @@ header {
   flex: 1;
   overflow-y: auto;
 }
-@media (max-width: 768px) {
-  .page {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    display: none;
-  }
-}
 
 .section-sorted {
   padding: 16px 0;
@@ -266,9 +235,6 @@ header {
   padding: 9px 12px;
   border-radius: 6px;
   border: 1px solid var(--primary);
-  @media screen and (min-width: 1440px) {
-    display: none;
-  }
 }
 
 .sorted-list {
@@ -340,16 +306,47 @@ header {
   gap: 15px;
   border: 1px solid #d2d4d8;
   background-color: var(--secondary);
-  padding: 12px 4px;
+  padding: 8px 4px;
+}
+.gallery.list-view .card,
+.gallery.list-view .card *:not(.moderator):not(.moderator *) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .gallery.list-view .card img {
   width: 40px;
   height: 24px;
 }
+.gallery.list-view .card .card-title {
+  width: 324px;
+  height: 24px;
+  font-size: 14px;
+}
 
-.gallery.list-view .card .created-info {
-  gap: 25px;
+.gallery.list-view .card .created-info,
+.gallery.list-view .info-moderator,
+.gallery.list-view .started-moderate {
+  gap: 24px;
+  margin: 0;
+}
+
+.gallery.list-view .start-btn {
+  padding: 9px 12px;
+}
+.gallery.list-view .category-text {
+  width: 152px;
+}
+
+.gallery.list-view .moderator img {
+  width: 24px;
+}
+.gallery.list-view .card-btns {
+  margin-top: 0;
+}
+.gallery.list-view .start-btn {
+  white-space: nowrap;
 }
 
 .view-controls {
@@ -401,16 +398,6 @@ header {
   line-height: 1.2;
   color: #d08939;
   background-color: #d0893940;
-  border-radius: 50px;
-  padding: 4px 12px;
-  margin-bottom: 3px;
-}
-.not-moderate {
-  font-size: 10px;
-  font-weight: 700;
-  line-height: 1.2;
-  color: #3b7dc9;
-  background-color: #3b7dc940;
   border-radius: 50px;
   padding: 4px 12px;
   margin-bottom: 3px;
@@ -473,8 +460,58 @@ header {
 .start-btn {
   color: var(--btn-text);
   background-color: var(--primary);
+  text-align: center;
   font-size: 14px;
-  padding: 15px 46px;
+  letter-spacing: 2%;
+  line-height: 1.25;
+  padding: 15px 40px;
   border-radius: 6px;
   border: none;
+}
+
+.gallery.list-view .quiz-name img {
+  order: 1;
+}
+.gallery.list-view .card-title {
+  order: 2;
+}
+.gallery.list-view .card-stars {
+  order: 3;
+}
+.gallery.list-view .created-data {
+  order: 4;
+}
+
+.sorted-section {
+  transition: all 0.3s ease;
+}
+
+/* стилі пагінації */
+.pagination {
+  display: none; /* прихована за замовчуванням */
+}
+
+.pagination.list-style {
+  display: flex;
+  background: #fff;
+  padding: 24px 16px;
+  border-radius: 0 0 6px 6px;
+  margin: 0 24px;
+}
+.items-per-page label {
+  font-size: 12px;
+  color: #69748c;
+  width: 45px;
+  height: 32px;
+}
+.items-per-page select {
+  font-size: 14px;
+  color: var(--text-color);
+  border-radius: 6px;
+  width: 80px;
+  height: 32px;
+}
+
+.items-per-page option {
+  color: #d2d4d8;
 }
