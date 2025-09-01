@@ -98,13 +98,21 @@ body {
 
 header {
   background-color: #ffffff;
-  padding: 10px 16px;
+
+  width: 100%;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 10px 16px;
+}
+
+.header-nav > div {
+  display: flex;
+  align-items: center;
+  gap: 19px;
 }
 
 .header-nav div {
@@ -181,7 +189,7 @@ header {
 }
 
 .sidebar .menu li {
-  padding: 8px 20px;
+  padding: 8px 16px;
   margin-bottom: 8px;
   border-left: 4px solid transparent;
 }
@@ -189,6 +197,16 @@ header {
 .sidebar .menu li:last-child {
   border-top: 1px solid #69748c;
   padding-top: 26px;
+  padding-bottom: 26px;
+}
+
+.sidebar .menu a {
+  color: #d2d4d8;
+  font-size: 14px;
+  text-align: center;
+}
+.menu-icon {
+  fill: #dadada;
 }
 
 .sidebar .menu li:active,
@@ -199,13 +217,10 @@ header {
   border-radius: 0 6px 6px 0;
 }
 
-.sidebar .menu a {
-  color: #d2d4d8;
-  font-size: 14px;
-  text-align: center;
-}
-.menu-icon {
-  fill: #dadada;
+.sidebar .menu li:hover .menu-icon,
+.sidebar .menu li:focus-within .menu-icon,
+.sidebar .menu li:active .menu-icon {
+  fill: var(--primary); /* рожевий */
 }
 
 .content {

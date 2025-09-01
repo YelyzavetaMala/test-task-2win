@@ -9,16 +9,26 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .header-nav {
+    padding: 10px 16px;
+  }
+
+  .header-nav > div {
+    gap: 24px;
+  }
   .menu-button {
     display: none;
   }
   .create-btn {
     font-size: 18px;
     padding: 13px 20px;
+    white-space: nowrap;
   }
   .logo {
     font-size: 40px;
     height: 46px;
+    margin-left: 25px;
+    margin-right: 463px;
   }
   .menu-nav-header {
     display: flex;
@@ -26,6 +36,8 @@
     font-size: 22px;
     font-weight: 700;
     color: var(--primary);
+    margin-right: 463px;
+    white-space: nowrap;
   }
   .avatar {
     width: 48px;
